@@ -4,11 +4,11 @@ body {
   width: 100vw;
   height: 100vh;
   overflow-x: hidden;
-  background: blue;
+  background: var(--mainpagebackground);
 }
 
 .grid-box {
-  width: 80vw;
+  width: var(--gridwidth);
   height: 100vh;
   margin: auto;
 }

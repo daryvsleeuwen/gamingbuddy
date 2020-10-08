@@ -1,0 +1,23 @@
+.navigation-bar {
+    
+    position: fixed;
+    display: flex;  
+
+    justify-content: space-between;  
+    width: var(--gridwidth);
+    height: var(--navbarheight);
+    bottom: 0;
+}
+
+.navigation-icon-box{
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.icon-box-text{
+    font-size: 12px;
+    color: white;
+}
+
