@@ -20,7 +20,7 @@ export default class AccountPag extends React.Component{
 
     render(){
         return <div className="test">
-             <NavigationBar leftclick={this.linkToHomePage} middleclick={this.linkToChatPage} rightclick={this.linkToAccountPage}></NavigationBar>
+             <NavigationBar active='right'></NavigationBar>
         </div>
     }
 }

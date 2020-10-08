@@ -12,12 +12,15 @@
 .navigation-icon-box{
     display: flex;
     flex-direction: column;
-
-
+    align-items: center;
 }
 
 .icon-box-text{
     font-size: 12px;
     color: white;
+}
+
+.active-navigation-box path{
+    fill: var(--mainorange) !important;
 }
 

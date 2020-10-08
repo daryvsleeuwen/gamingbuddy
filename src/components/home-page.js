@@ -22,18 +22,6 @@ export default class HomePage extends React.Component{
         this.props.history.push('/buddysearch');
     }
 
-    linkToChatPage = () =>{
-        this.props.history.push('/chat');
-    }
-
-    linkToHomePage = () =>{
-        this.props.history.push('/');
-    }
-
-    linkToAccountPage = () =>{
-        this.props.history.push('/account');
-    }
-
     render(){
         return <div className="grid-box">
             <div className="content-holder">
@@ -46,7 +34,7 @@ export default class HomePage extends React.Component{
                 <UserBox click={this.linkToProfile} sideinfo={this.sideinfo} imagesource='../assets/profile-image.jpg' username="Killa_xX" subtitle="Rocket Leaque"></UserBox>
                 <IconButton click={this.linkToBuddySearch} icon={searchicon}></IconButton>
             </div>  
-            <NavigationBar leftclick={this.linkToHomePage} middleclick={this.linkToChatPage} rightclick={this.linkToAccountPage}></NavigationBar>
+            <NavigationBar active='left'></NavigationBar>
         </div>
     }
 }
