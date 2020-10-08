@@ -13,10 +13,10 @@ export default class UserBox extends React.Component{
         return <div className="user-box">
             <img className="user-image-box" src={this.props.imagesource} alt="user icon"/>
             <div className="user-box-info">
-                <span className="username">{this.props.username}
+                <span className="username pop-b">{this.props.username}
                     {this.props.sideinfo}
                 </span>
-                <span className="user-subtitle">{this.props.subtitle}</span>
+                <span className="user-subtitle pop-m">{this.props.subtitle}</span>
             </div>
         </div>
     }
