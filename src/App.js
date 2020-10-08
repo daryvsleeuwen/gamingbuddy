@@ -1,9 +1,8 @@
 import React from 'react';
 import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 import './App.css';
-import './styles/fonts.css';
 import './styles/css-variables.css';
-
+import './styles/fonts.css';
 import PublicRoute from "./components/PublicRoute";
 import HomePage from './components/home-page';
 import ProfilePage from './components/profile-page';

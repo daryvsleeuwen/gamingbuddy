@@ -9,7 +9,7 @@ body {
 }
 
 .grid-box {
-  width: 80vw;
+  width: var(--gridwidth);
   height: 100vh;
   margin: auto;
 }

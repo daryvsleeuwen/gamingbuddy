@@ -17,7 +17,7 @@ export default class NavigationBar extends React.Component{
                     }
                 }}>
                     <img src={homeicon}/>
-                    <span className="icon-box-text"></span>
+                    <span className="icon-box-text pop-r">Home</span>
                 </div>
 
                 <div className="navigation-icon-box" onClick={() =>{
@@ -26,7 +26,7 @@ export default class NavigationBar extends React.Component{
                     }
                 }}>
                     <img src={chaticon}/>
-                    <span className="icon-box-text"></span>
+                    <span className="icon-box-text pop-r">Chats</span>
                 </div>
 
                 <div className="navigation-icon-box" onClick={() =>{
@@ -35,7 +35,7 @@ export default class NavigationBar extends React.Component{
                     }
                 }}>
                     <img src={accounticon}/>
-                    <span className="icon-box-text"></span>
+                    <span className="icon-box-text pop-r">Account</span>
                 </div>
             </div>
     }
