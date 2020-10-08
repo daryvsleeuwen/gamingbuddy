@@ -11,17 +11,29 @@ export default class NavigationBar extends React.Component{
 
     render(){
         return <div className="navigation-bar">
-                <div className="navigation-icon-box">
+                <div className="navigation-icon-box" onClick={() =>{
+                    if(typeof this.props.leftclick === 'function'){
+                        this.props.leftclick();
+                    }
+                }}>
                     <img src={homeicon}/>
                     <span className="icon-box-text"></span>
                 </div>
 
-                <div className="navigation-icon-box">
+                <div className="navigation-icon-box" onClick={() =>{
+                    if(typeof this.props.middleclick === 'function'){
+                        this.props.middleclick();
+                    }
+                }}>
                     <img src={chaticon}/>
                     <span className="icon-box-text"></span>
                 </div>
 
-                <div className="navigation-icon-box">
+                <div className="navigation-icon-box" onClick={() =>{
+                    if(typeof this.props.rightclick === 'function'){
+                        this.props.rightclick();
+                    }
+                }}>
                     <img src={accounticon}/>
                     <span className="icon-box-text"></span>
                 </div>

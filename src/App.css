@@ -4,11 +4,47 @@ body {
   width: 100vw;
   height: 100vh;
   overflow-x: hidden;
-  background: blue;
+  background: var(--mainpagebackground);
+  color: white;
 }
 
 .grid-box {
   width: 80vw;
   height: 100vh;
   margin: auto;
+}
+
+.content-holder{
+  position: relative;
+  width: 100%;
+  height: calc(100vh - var(--navbarheight));
+  max-height: calc(100vh - var(--navbarheight));
+}
+
+.flex{
+  display: flex;
+}
+
+.page-title{
+  font-size: 24px;
+  margin-bottom: 50px;
+}
+
+.icon-button{
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: var(--mainorange);
+  position: absolute;
+  bottom: 30px;
+  left: 100%;
+  transform: translateX(-100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-button-icon{
+  width: 40%;
+  height: auto;
 }

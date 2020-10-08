@@ -1,0 +1,37 @@
+:root{
+    --userboxheight: 50px;
+}
+
+.user-box{
+    color: white;
+    font-size: 14px;
+    display: flex;
+    height: var(--userboxheight);
+    margin: 20px 0px;
+}
+
+.user-image-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--userboxheight);;
+    height: var(--userboxheight);
+    margin-right: 15px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.user-image{
+    height: 100%;
+}
+
+.userbox-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.userbox-username{
+    margin-right: 10px;
+}
