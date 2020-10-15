@@ -19,8 +19,11 @@ export default class ChatPage extends React.Component{
     }
 
     render(){
-        return <div className="test">
-             <NavigationBar active='middle'></NavigationBar>
+        return <div className="grid-box">
+        <div className="content-holder">
+         
         </div>
+        <NavigationBar router={this.props.history} active='middle' ></NavigationBar>
+    </div>
     }
 }

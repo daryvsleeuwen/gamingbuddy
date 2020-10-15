@@ -22,7 +22,7 @@ export default class BuddySearchPage extends React.Component{
                 <Input placeholder="Game" change={this.updateInput}></Input>
                 <Button text="Search" click={this.searchBuddy}></Button>
             </div>
-            <NavigationBar></NavigationBar>
+            <NavigationBar router={this.props.history} active='left' ></NavigationBar>
         </div>
     }
 }

@@ -10,19 +10,21 @@ export default class NavigationBar extends React.Component{
     }
 
     componentDidMount = () =>{
-        this[this.props.active].current.classList.add('active-navigation-box');
+        if(this.props.active){
+            this[this.props.active].current.classList.add('active-navigation-box');
+        }
     }
 
     linkToChatPage = () =>{
-        this.props.history.push('/chat');
+        this.props.router.push('/chat');
     }
 
     linkToHomePage = () =>{
-        this.props.history.push('/');
+        this.props.router.push('/');
     }
 
     linkToAccountPage = () =>{
-        this.props.history.push('/account');
+        this.props.router.push('/account');
     }
 
     render(){

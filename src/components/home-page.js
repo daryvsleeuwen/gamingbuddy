@@ -34,7 +34,7 @@ export default class HomePage extends React.Component{
                 <UserBox click={this.linkToProfile} sideinfo={this.sideinfo} imagesource='../assets/profile-image.jpg' username="Killa_xX" subtitle="Rocket Leaque"></UserBox>
                 <IconButton click={this.linkToBuddySearch} icon={searchicon}></IconButton>
             </div>  
-            <NavigationBar active='left'></NavigationBar>
+            <NavigationBar router={this.props.history} active='left'></NavigationBar>
         </div>
     }
 }
