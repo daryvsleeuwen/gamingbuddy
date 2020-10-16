@@ -39,7 +39,7 @@ export default class ChatUserBox extends React.Component {
             </span>
           </div>
         </div>
-        <hr class="devider"></hr>
+        <hr className="devider"></hr>
       </div>
     );
   }

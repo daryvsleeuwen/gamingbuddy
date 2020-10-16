@@ -21,6 +21,10 @@ export default class ChatPage extends React.Component {
     this.props.history.push("/account");
   };
 
+  linktoUserchat = () => {
+    this.props.history.push("/userchat");
+  };
+
   render() {
     return (
       <div className="grid-box">
@@ -37,6 +41,7 @@ export default class ChatPage extends React.Component {
             username="ferdinandX64"
             sideinfo="11:05AM"
             subtitle='"Whatsupp loser, wanna teabag?"'
+            click={this.linktoUserchat}
           ></ChatUserBox>
 
           <ChatUserBox
@@ -44,6 +49,7 @@ export default class ChatPage extends React.Component {
             username="ferdinandX64"
             sideinfo="15:40PM"
             subtitle='"Lets go wreck some noobs"'
+            click={this.linktoUserchat}
           ></ChatUserBox>
 
           <ChatUserBox
@@ -51,6 +57,7 @@ export default class ChatPage extends React.Component {
             username="ferdinandX64"
             sideinfo="11:05AM"
             subtitle='"Whatsupp loser, wanna teabag?"'
+            click={this.linktoUserchat}
           ></ChatUserBox>
         </div>
 
