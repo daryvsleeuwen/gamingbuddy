@@ -1,6 +1,24 @@
 .sendMessageBar {
-  width: 100%;
+  display: flex;
   padding: 12px;
   box-sizing: border-box;
-  border-radius: 20px;
+
+  justify-content: space-between;
+  width: 100%;
+  height: 50px;
+  bottom: 0;
+  border-radius: 30px 30px 30px 30px;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+.input-container {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+  position: absolute;
+  bottom: 0;
 }

@@ -1,5 +1,4 @@
 import React from "react";
-import NavigationBar from "./navigation-bar";
 import SendMessageBar from "./send-message-bar";
 
 export default class MessagePage extends React.Component {
@@ -12,12 +11,10 @@ export default class MessagePage extends React.Component {
   render() {
     return (
       <div className="grid-box">
-        <div>
-          <SendMessageBar></SendMessageBar>
-          <NavigationBar
-            router={this.props.history}
-            active="middle"
-          ></NavigationBar>
+        <div className="content-holder">
+          <div className="input-wrapper">
+            <SendMessageBar></SendMessageBar>
+          </div>
         </div>
       </div>
     );

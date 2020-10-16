@@ -1,0 +1,19 @@
+.send-icon-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 30px;
+  background: var(--mainorange);
+  position: absolute;
+
+  left: 98%;
+  bottom: 10%;
+  transform: translateX(-100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.send-icon-button-icon {
+  width: 40%;
+  height: auto;
+}
