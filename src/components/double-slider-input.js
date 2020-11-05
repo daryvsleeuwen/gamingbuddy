@@ -27,6 +27,7 @@ export default class DoubleSliderInput extends React.Component{
 
         this.slidervalue.textContent = `${this.state.currentmin}-${this.state.currentmax}`;
         this.slider.style.background = `linear-gradient(90deg, var(--fadedmainorange) 0%, var(--fadedmainorange) ${this.leftvalue}%, var(--mainorange) ${this.leftvalue}%, var(--mainorange) ${this.rightvalue}%, var(--fadedmainorange) ${this.rightvalue}% ,var(--fadedmainorange) 100%)`;
+        this.props.valuechange({min: min, max: max});
     }
 
     handleMouseEvent = (target, side) =>{
