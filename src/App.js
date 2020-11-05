@@ -11,12 +11,14 @@ import ChatPage from "./components/chat-page";
 import AccountPage from "./components/account-page";
 import Messagepage from "./components/message-page";
 
+sessionStorage.setItem('loggedUserID', "6ad63258-b31d-42a3-a774-bbbcda9655b0");
+
 function App() {
   return (
     <Router>
       <Switch>
         <PublicRoute path="/" component={HomePage} exact />
-        <PublicRoute path="/profile/:profileid" component={ProfilePage} />
+        <PublicRoute path="/profile" component={ProfilePage} />
         <PublicRoute path="/buddysearch" component={BuddySearchPage} />
         <PublicRoute path="/chat" component={ChatPage} />
         <PublicRoute path="/account" component={AccountPage} />

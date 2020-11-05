@@ -3,23 +3,19 @@ import "../styles/sendmessagebar.css";
 import sendIcon from "../assets/send-button.svg";
 
 export default class SendMessageBar extends React.Component {
-  constructor() {
-    super();
-  }
+    constructor() {
+        super();
+    }
 
-  componentDidMount = () => {};
+    componentDidMount = () => {};
 
-  render() {
-    return (
-      <div>
-        <div>
-          <input
-            type="text"
-            className="sendMessageBar"
-            placeholder="Type a message"
-          ></input>
-        </div>
-      </div>
-    );
-  }
+    render() {
+        return (
+            <div>
+                <div>
+                    <input type="text" className="sendMessageBar" placeholder="Type a message"></input>
+                </div>
+            </div>
+        );
+    }
 }

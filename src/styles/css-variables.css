@@ -1,6 +1,7 @@
 :root{
     --mainpagebackground: #303030;
     --mainorange: #E89C14;
+    --fadedmainorange: #e89a1454;
     --maingray: #2D2D2D;
     --navbarheight: 60px;
     --gridwidth: 80vw;
