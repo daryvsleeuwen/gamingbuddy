@@ -1,0 +1,32 @@
+{
+    "6ad63258-b31d-42a3-a774-bbbcda9655b0": {
+        "username": "Killa_xX",
+        "bio": "I like killing noobs",
+        "profileimage": "https://i410773.hera.fhict.nl/gamingbuddy/profile-images/profile.jpg",
+        "buddies": ["813f42a5-c90d-403c-b52a-2f16263ff0b2", "b0bacd56-0533-42fb-a2c6-61b0184e5aee"],
+        "lastplayed": 12,
+        "online": false,
+        "mostplayed": "GTA V",
+        "lastplayedgame": "Call Of Duty MW"
+    },
+    "813f42a5-c90d-403c-b52a-2f16263ff0b2": {
+        "username": "TheLegend27",
+        "bio": "Probably the best gaming buddy ever existed",
+        "profileimage": "https://i410773.hera.fhict.nl/gamingbuddy/profile-images/profile.jpg",
+        "buddies": ["6ad63258-b31d-42a3-a774-bbbcda9655b0"],
+        "lastplayed": 3,
+        "online": false,
+        "mostplayed": "League of Legends",
+        "lastplayedgame": "League of Legends"
+    },
+    "b0bacd56-0533-42fb-a2c6-61b0184e5aee": {
+        "username": "NoobDestroyer",
+        "bio": "I killed more noobs then anyone else",
+        "profileimage": "https://i410773.hera.fhict.nl/gamingbuddy/profile-images/profile.jpg",
+        "buddies": ["6ad63258-b31d-42a3-a774-bbbcda9655b0"],
+        "lastplayed": 0,
+        "online": true,
+        "mostplayed": "GTA V",
+        "lastplayedgame": "COD Warzone"
+    }
+}

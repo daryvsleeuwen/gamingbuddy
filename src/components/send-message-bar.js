@@ -4,11 +4,11 @@ import sendIcon from "../assets/send-button.svg";
 import SendButtonIcon from "./send-icon-button";
 
 export default class SendMessageBar extends React.Component {
-  constructor() {
-    super();
-  }
+    constructor() {
+        super();
+    }
 
-  componentDidMount = () => {};
+    componentDidMount = () => {};
 
   render() {
     return (

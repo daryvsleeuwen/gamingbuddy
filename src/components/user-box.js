@@ -26,7 +26,7 @@ export default class UserBox extends React.Component {
           />
         </div>
         <div className="userbox-info">
-          <div className="flex">
+          <div className="userbox-topbar">
             <span className="userbox-username pop-m">
               {this.props.username}
             </span>

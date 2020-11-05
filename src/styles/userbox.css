@@ -34,4 +34,15 @@
 
 .userbox-username{
     margin-right: 10px;
+    font-size: 16px;
+    color: var(--mainorange);
+}
+
+.userbox-sideinfo{
+    font-size: 13px;
+}
+
+.userbox-topbar{
+    display: flex;
+    align-items: center;
 }
