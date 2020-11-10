@@ -1,0 +1,48 @@
+:root {
+  --profilepageuserboxheight: 50px;
+}
+
+.profile-page-user-box {
+  color: white;
+  font-size: 14px;
+  display: flex;
+  height: var(--profilepageuserboxheight);
+  margin: 20px 0px;
+}
+
+.profile-page-user-image-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: var(--userboxheight);
+  height: var(--userboxheight);
+  margin-right: 15px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile-page-user-image {
+  height: 100%;
+}
+
+.profile-page-userbox-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.profile-page-userbox-username {
+  margin-right: 10px;
+  font-size: 16px;
+  color: var(--mainorange);
+}
+
+.profile-page-userbox-sideinfo {
+  font-size: 13px;
+}
+
+.profile-page-userbox-topbar {
+  display: flex;
+  align-items: center;
+}

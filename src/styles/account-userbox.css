@@ -1,0 +1,22 @@
+:root {
+  --userboxheight: 50px;
+}
+
+.account-box {
+  color: white;
+  font-size: 14px;
+  display: flex;
+  height: var(--userboxheight);
+  margin: 20px 0px;
+}
+
+.account-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: var(--userboxheight);
+  height: var(--userboxheight);
+  margin-right: 15px;
+  border-radius: 50%;
+  overflow: hidden;
+}
