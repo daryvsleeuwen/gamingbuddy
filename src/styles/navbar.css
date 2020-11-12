@@ -1,12 +1,10 @@
 .navigation-bar {
-    
-    position: fixed;
+    /* position: fixed; */
     display: flex;  
-
     justify-content: space-between;  
     width: var(--gridwidth);
     height: var(--navbarheight);
-    bottom: 0;
+    /* bottom: 0; */
 }
 
 .navigation-icon-box{
