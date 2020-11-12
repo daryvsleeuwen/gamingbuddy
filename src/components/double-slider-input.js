@@ -25,7 +25,7 @@ export default class DoubleSliderInput extends React.Component{
             currentmax: max
         });
 
-        this.slidervalue.textContent = `${this.state.currentmin}-${this.state.currentmax}`;
+        this.slidervalue.textContent = `${this.state.currentmin}-${this.state.currentmax} ${this.props.valuesuffix || ""}`;
         this.slider.style.background = `linear-gradient(90deg, var(--fadedmainorange) 0%, var(--fadedmainorange) ${this.leftvalue}%, var(--mainorange) ${this.leftvalue}%, var(--mainorange) ${this.rightvalue}%, var(--fadedmainorange) ${this.rightvalue}% ,var(--fadedmainorange) 100%)`;
         this.props.valuechange({min: min, max: max});
     }
@@ -87,7 +87,7 @@ export default class DoubleSliderInput extends React.Component{
         return <div className="slider-wrapper">
             <div className="slider-titles-box">
                 <span className="slider-name pop-b">{this.props.name}</span>
-                <span className="slider-val pop-b" ref={this.sv}>{`${this.state.currentmin}-${this.state.currentmax}`}</span>
+                <span className="slider-val pop-b" ref={this.sv}>{`${this.state.currentmin}-${this.state.currentmax} ${this.props.valuesuffix || ""}`}</span>
             </div>
             <div className="slider-input" ref={this.slider}>
                 <div className="slider-controller left-controller" onMouseDown={(e) => this.handleMouseEvent(e.target, "left")} onTouchStart={(e) => this.handleMouseEvent(e.target, "left")}></div>

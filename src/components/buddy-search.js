@@ -14,9 +14,10 @@ export default class BuddySearchPage extends React.Component {
         this.language = 'English';
     }
 
-    searchBuddy = (button) => {
-        console.log(button);
+    linkToSearcher = () =>{
+        this.props.history.push('/search');
     }
+
     
     setAge = (age) =>{
         this.age = age;
@@ -29,8 +30,8 @@ export default class BuddySearchPage extends React.Component {
             <h1 className="page-subtitle pop-m">Start the searching and reveal your buddy</h1>
                 <FilterInput placeholder="Game" filters={this.gamefilters}></FilterInput>
                 <FilterInput placeholder="Language" filters={this.languagefilters}></FilterInput>
-                <DoubleSliderInput minvalue={12} maxvalue={100} name={'Age'} valuechange={this.setAge()}></DoubleSliderInput>
-                <Button text="Start matchmaking" click={this.searchBuddy}></Button>
+                <DoubleSliderInput minvalue={12} maxvalue={100} name={'Age'} valuesuffix={"years"} valuechange={this.setAge()}></DoubleSliderInput>
+                <Button text="Start matchmaking" click={this.linkToSearcher}></Button>
             </div>
             <NavigationBar router={this.props.history} active='left'></NavigationBar>
         </div>

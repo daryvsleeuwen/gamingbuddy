@@ -10,6 +10,7 @@ import BuddySearchPage from "./components/buddy-search";
 import ChatPage from "./components/chat-page";
 import AccountPage from "./components/account-page";
 import Messagepage from "./components/message-page";
+import SearchResultPage from "./components/search-result-page";
 
 sessionStorage.setItem('loggedUserID', "6ad63258-b31d-42a3-a774-bbbcda9655b0");
 
@@ -23,6 +24,7 @@ function App() {
         <PublicRoute path="/chat" component={ChatPage} />
         <PublicRoute path="/account" component={AccountPage} />
         <PublicRoute path="/userchat" component={Messagepage} />
+        <PublicRoute path="/search" component={SearchResultPage} />
       </Switch>
     </Router>
   );

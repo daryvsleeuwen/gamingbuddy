@@ -25,10 +25,10 @@ export default class HomePage extends React.Component{
             buddies.forEach(buddy => {             
                 this.databasehandler.read(buddy, (data) =>{
                     let userdata = data.val();  
-                    let sideinfo = <span className="userbox-sideinfo pop-l">{`played ${userdata.lastplayed} hours ago`}</span>; 
+                    // let sideinfo = <span className="userbox-sideinfo pop-l">{`played ${userdata.lastplayed} hours ago`}</span>; 
 
                     boxes.push(
-                        <UserBox key={buddy} click={this.linkToProfile} sideinfo={sideinfo} imagesource={userdata.profileimage} username={userdata.username} subtitle={`Last played: ${userdata.lastplayedgame}`}></UserBox>
+                        <UserBox key={buddy} click={this.linkToProfile} imagesource={userdata.profileimage} username={userdata.username} subtitle={`Last played: ${userdata.lastplayedgame}`}></UserBox>
                     );
 
                     this.setState({
